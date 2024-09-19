@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
 #include "cleanCharacter.generated.h"
+#include "MotionWarpingComponent.h"
 
 class USpringArmComponent;
 class UCameraComponent;
@@ -43,6 +44,9 @@ class AcleanCharacter : public ACharacter
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* LookAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<class UMotionWarpingComponent> MotionWarpComponent;
 
 public:
 	AcleanCharacter();
