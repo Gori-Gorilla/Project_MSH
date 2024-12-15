@@ -5,8 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
-#include "cleanCharacter.generated.h"
 #include "MotionWarpingComponent.h"
+#include "cleanCharacter.generated.h"
 
 class USpringArmComponent;
 class UCameraComponent;
